@@ -1,15 +1,24 @@
+require('dotenv').config()
 const express=require('express')
 const connectDB=require('./DB/connect')
 const app=express()
-const PORT=process.env.PORT || 5000;
-const routes=require('./routes/routes')
+const PORT= 5000;
+const auth=require('./routes/auth')
+const notes=require('./routes/notes')
 
-app.use('/',routes)
+
+//middleware 
+app.use(express.json())
+//Available Routes
+app.use('/api/auth',auth)
+// app.use('/api/notes',notes)
+
+
 
 const start= async()=>{
     try{
 
-         connectDB();
+         await connectDB(process.env.MONGODB_URL);
         app.listen(PORT,()=>{
             
             console.log(`The server is running successfully at ${PORT} port`)

@@ -1,4 +1,4 @@
-const Product=require('../Schma/models')
+const Product=require('../models/models')
 const getAllElement=async(req,res)=>{
     const mydata= await Product.find()
     res.status(200).json({mydata})
