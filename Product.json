@@ -1,0 +1,50 @@
+[
+    {
+        "name":"iphone",
+        "price": 154,
+        "featured":true,
+        "company":"apple"
+    },
+    {
+        "name":"watch",
+        "price": 80,
+       
+        "company":"apple"
+    },
+    {
+        "name":"iphone13 pro max",
+        "price": 1300,
+        "featured":true,
+        "company":"apple"
+    },
+    {
+        "name":"Dell inspiron laptop",
+        "price": 400,
+        
+        "company":"dell"
+    },
+    {
+        "name":"remdi note13 pro",
+        "price": 300,
+        
+        "company":"mi"
+    },
+    {
+        "name":"asus rog2",
+        "price": 430,
+        
+        "company":"asus"
+    },
+    {
+        "name":"alienware 007 laptop",
+        "price": 2000,
+        "featured":true,
+        "company":"dell"
+    },
+    {
+        "name":"alienware 578 atomic laptop",
+        "price": 10000,
+        "featured":true,
+        "company":"dell"
+    }
+]
